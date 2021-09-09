@@ -1,30 +1,30 @@
 {
-    "name": "getfused-frontity",
-    "version": "1.0.0",
-    "private": true,
-    "description": "Frontity project",
-    "keywords": [
-      "frontity"
-    ],
-    "engines": {
-      "node": ">=10.0.0",
-      "npm": ">=6.0.0"
-    },
-    "scripts": {
-      "dev": "frontity dev",
-      "build": "frontity build",
-      "serve": "frontity serve"
-    },
-    "prettier": {},
-    "dependencies": {
-      "@frontity/core": "^1.14.3",
-      "@frontity/html2react": "^1.7.0",
-      "@frontity/mars-theme": "./packages/mars-theme",
-      "@frontity/tiny-router": "^1.4.4",
-      "@frontity/wp-source": "^1.11.5",
-      "frontity": "^1.17.0",
-      "getfused-theme": "file:packages/getfused-theme",
-      "moment": "^2.29.1"
-    }
+  "name": "getfused-frontity",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontity project",
+  "keywords": [
+    "frontity"
+  ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "dev": "frontity dev",
+    "build": "frontity build",
+    "serve": "frontity serve",
+    "wpe-build": "frontity build"
+  },
+  "prettier": {},
+  "dependencies": {
+    "@frontity/core": "^1.14.3",
+    "@frontity/html2react": "^1.7.0",
+    "@frontity/mars-theme": "./packages/mars-theme",
+    "@frontity/tiny-router": "^1.4.4",
+    "@frontity/wp-source": "^1.11.5",
+    "frontity": "^1.17.0",
+    "getfused-theme": "file:packages/getfused-theme",
+    "moment": "^2.29.1"
   }
-  
+}

@@ -2,10 +2,12 @@ import React from 'react'
 import { connect, Head, Global, css } from 'frontity'
 import Switch from '@frontity/components/switch'
 import Header from './header'
+import Home from './Home'
 import Page from './page'
 import Blog from './blog'
 import Post from './post'
 import Error from './error'
+import Loading from './loading'
 import Footer from './footer'
 
 const Root = ({ state }) => {
@@ -14,9 +16,7 @@ const Root = ({ state }) => {
     return (
       <>
         <Head>
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-            </style>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500" rel="stylesheet" />
         </Head>
         <Global
             styles= {css`
@@ -59,19 +59,24 @@ const Root = ({ state }) => {
                     color: #000;
                     margin-bottom: 1.5rem;
                 }
-            a {
-                color: #ffcc00;
-                font-weight: 500;
-                text-decoration: none;
-            }
+                a {
+                    color: #ffcc00;
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+                p {
+                    margin-bottom: 1.5rem;
+                }
             `}
         />
         <Header />
         <Switch>
+            <Loading when={data.isFetching} />
+            <Home when={data.isHome} />
+            <Blog when={data.isArchive} />
             <Page when={data.isPage} />
             <Post when={data.isPostType} />
-            <Blog when={data.isArchive} />
-            <Error />
+            <Error when={data.isError} />
         </Switch>
         <Footer />
       </>

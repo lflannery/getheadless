@@ -2,7 +2,7 @@ const settings = {
   "name": "getfused-frontity",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.org",
+      "url": "https://comparisonsite.wpengine.com/",
       "title": "Test Frontity Blog",
       "description": "WordPress installation for Frontity development"
     }
@@ -45,7 +45,9 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://laurastagesite.wpengine.com/",
+          "url": "https://comparisonsite.wpengine.com/",
+          "homepage": "/home",
+          "postsPage": "/blog",
           "media": [
             {
               endpoint: "media"

@@ -10,13 +10,17 @@ const Post = ({ state, libraries }) => {
       <>
         <Head>
             <title>{post.title.rendered}</title>
-            <meta name="description" content={post.excerpt.rendered} />
+            {/* <meta name="description" content={post.excerpt.rendered} /> */}
         </Head>
         <Main>
             <ContentSection>
                 <h1>{post.title.rendered}</h1>
                 <h2><div dangerouslySetInnerHTML={{ __html: post.acf.subtitle }} /></h2>
                 <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                <CallToAction>
+                    <div dangerouslySetInnerHTML={{ __html: post.acf.call_to_action }} />
+                    <Link link={post.acf.cta_link}>{post.acf.cta_label}</Link>
+                </CallToAction>
             </ContentSection>
         </Main> 
       </>
@@ -38,11 +42,36 @@ const ContentSection = styled.div`
       line-height: 1;
   }
 
-  p, ul, h1, h2 {
+  p, ul, h1, h2, h3 {
       margin-bottom: 1.5rem;
   }
   
   ul {
       padding-left: 3rem;
+  }
+  a {
+      color: #0e49b5;
+      text-decoration: underline;
+      &:hover {
+          text-decoration: none;
+      }
+  }
+`
+const CallToAction = styled.div`
+  background: #1a1a1a;
+  color: #fff;
+  padding: 1.5rem;
+  margin: 3rem 0;
+
+  p {
+      margin-bottom: 2.5rem;
+  }
+
+  a {
+      color: #ffcc00;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      text-decoration: none;
   }
 `

@@ -2,6 +2,8 @@ import React from 'react'
 import { connect, Head, styled } from 'frontity'
 import Link from '@frontity/components/link'
 
+
+
 const Page = ({ state, libraries }) => {
     const data = state.source.get(state.router.link)
     const page = state.source[data.type][data.id]
@@ -16,54 +18,77 @@ const Page = ({ state, libraries }) => {
             <meta name="description" content={page.excerpt.rendered} />
         </Head>
         <main>
-          <TopContent>
-            <h1>{page.title.rendered}</h1>
-            <h2 className="subtitle"><Html2React html={page.acf.subtitle} /></h2>
-            <img className="featuredImage" src={image.source_url} alt="" />
-          </TopContent>
-          <ContentSection>
-              <PageContent>
-                <Html2React html={page.acf.page_content} />
-              </PageContent>
-              <ServiceGrid>
+            <TopContent>
+                <h1><Html2React html={page.title.rendered} /></h1>
+                <h2 className="subtitle"><Html2React html={page.acf.subtitle} /></h2>
+                { image ? 
+                   <img className="featuredImage" src={image.source_url} alt="" />
+                : null }
+                
+            </TopContent>
+            <ContentSection>
+                <PageContent>
+                    <Html2React html={page.acf.page_content} />
+                </PageContent>
+                <ServiceGrid>
+                    { page.acf.service_info_1 ? 
+                        <div>
+                            <Html2React html={page.acf.service_info_1} />
+                        </div>
+                    : null }
+                    { page.acf.service_info_2 ? 
+                        <div>
+                            <Html2React html={page.acf.service_info_2} />
+                        </div>
+                    : null }
+                    { page.acf.service_info_3 ? 
+                        <div>
+                            <Html2React html={page.acf.service_info_3} />
+                        </div>
+                    : null }
+                    { page.acf.service_info_4 ? 
+                        <div>
+                            <Html2React html={page.acf.service_info_4} />
+                        </div>
+                    : null }
+                    { page.acf.service_info_5 ? 
+                        <div>
+                            <Html2React html={page.acf.service_info_5} />
+                        </div>
+                    : null }
+                    { page.acf.service_info_6 ? 
+                        <div>
+                            <Html2React html={page.acf.service_info_6} />
+                        </div>
+                    : null }
+                </ServiceGrid>
+                { page.acf.heading ? 
+                    <MarketingPanel>
+                        <h2>{page.acf.heading}</h2>
+                        { page.acf.logos.image_1 ? <img src={page.acf.logos.image_1} alt="" /> : null  }
+                        { page.acf.logos.image_2 ? <img src={page.acf.logos.image_2} alt="" /> : null  }
+                        { page.acf.logos.image_3 ? <img src={page.acf.logos.image_3} alt="" /> : null  }
+                        { page.acf.logos.image_4 ? <img src={page.acf.logos.image_4} alt="" /> : null  }
+                        { page.acf.logos.image_5 ? <img src={page.acf.logos.image_5} alt="" /> : null  }
+                        { page.acf.logos.image_6 ? <img src={page.acf.logos.image_6} alt="" /> : null  }
+                    </MarketingPanel>
+                : null  }
+            </ContentSection>
+            <Bottom>
                 <div>
-                  <Html2React html={page.acf.service_info_1} />
+                    <span>Get Inspired</span>
+                    <h2 className="featuredWork">Featured <Html2React html={page.title.rendered} /> work</h2>
+                    <Link link="/link" className="cta">See our portfolio</Link>
                 </div>
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
                 <div>
-                  <Html2React html={page.acf.service_info_2} />
+                    <h2>Ready to take your brand to new levels of success?</h2>
+                    <p>Get in touch with our team to get the conversation started. We look forward to partnering with you to achieve your marketing goals.</p>
+                    <span className="cta">Let's drive your results</span>
                 </div>
-                <div>
-                  <Html2React html={page.acf.service_info_3} />
-                </div>
-                <div>
-                  <Html2React html={page.acf.service_info_4} />
-                </div>
-                <div>
-                  <Html2React html={page.acf.service_info_5} />
-                </div>
-                <div>
-                  <Html2React html={page.acf.service_info_6} />
-                </div>
-              </ServiceGrid>
-              <MarketingPanel>
-                  <h2>{page.acf.heading}</h2>
-              </MarketingPanel>
-          </ContentSection>
-          <Bottom>
-            <div>
-              <span>Get Inspired</span>
-              <h2 className="featuredWork">Featured {page.title.rendered} work</h2>
-              <Link link="/link" className="cta">See our portfolio</Link>
-            </div>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <div>
-              <h2>Ready to take your brand to new levels of success?</h2>
-              <p>Get in touch with our team to get the conversation started. We look forward to partnering with you to achieve your marketing goals.</p>
-              <span className="cta">Let's drive your results</span>
-            </div>
-            <form></form>
+                <form></form>
           </Bottom>
         </main>
       </>
@@ -98,9 +123,9 @@ const PageContent = styled.div`
 const ServiceGrid = styled.div`
   max-width: 1140px;
   margin: auto;  
-  padding-top: 2.5rem;  
+  padding: 5rem 0;  
   display: grid;
-  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 3.5rem 1rem;
 
   ul {
@@ -127,6 +152,14 @@ const MarketingPanel = styled.div`
   color: #fff;
   text-align: center;
   padding: 6.2rem 0 6.5rem 0;
+
+  h2 {
+      margin-bottom: 2.5rem;
+  }
+
+  img {
+      margin: 0 1rem;
+  }
 `
 const Bottom = styled.div`
   margin: auto;  

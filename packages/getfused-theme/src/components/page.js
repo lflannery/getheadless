@@ -17,14 +17,14 @@ const Page = ({ state, libraries }) => {
             <title>{page.title.rendered}</title>
             <meta name="description" content={page.excerpt.rendered} />
         </Head>
-        <main>
+        { data.route === "/services/marketing/" || data.route === "/services/branding/" || data.route === "/services/design-ux/" ?
+            <main>
             <TopContent>
                 <h1><Html2React html={page.title.rendered} /></h1>
                 <h2 className="subtitle"><Html2React html={page.acf.subtitle} /></h2>
                 { image ? 
                    <img className="featuredImage" src={image.source_url} alt="" />
                 : null }
-                
             </TopContent>
             <ContentSection>
                 <PageContent>
@@ -91,6 +91,14 @@ const Page = ({ state, libraries }) => {
                 <form></form>
           </Bottom>
         </main>
+        : 
+        <main>
+            <TopContent>
+                <h1><Html2React html={page.title.rendered} /></h1>
+            </TopContent>
+        </main>
+        }
+        
       </>
     );
 };

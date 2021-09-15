@@ -3,7 +3,7 @@ const settings = {
   "state": {
     "frontity": {
       "url": "https://comparisonsite.wpengine.com/",
-      "title": "Test Frontity Blog",
+      "title": "Test Frontity Site",
       "description": "WordPress installation for Frontity development"
     }
   },
@@ -11,34 +11,7 @@ const settings = {
     {
       "name": "getfused-theme",
       "state": {
-        "theme": {
-          "menu": [
-            [
-              "Home",
-              "/"
-            ],
-            [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
-            ]
-          ],
-          "featured": {
-            "showOnList": false,
-            "showOnPost": false
-          }
-        }
+        "theme": {}
       }
     },
     {
@@ -48,11 +21,6 @@ const settings = {
           "url": "https://comparisonsite.wpengine.com/",
           "homepage": "/home",
           "postsPage": "/blog",
-          "media": [
-            {
-              endpoint: "media"
-            }
-          ]
         }
       }
     },

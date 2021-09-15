@@ -5,22 +5,25 @@ import moment from 'moment'
 
 const Footer = ({ state }) => {
     const year = moment().format('YYYY');
+    const footerMenuItems = state.source.get(`/menu/${state.theme.footerMenu}/`).items;
+    const socialMenuItems = state.source.get(`/menu/${state.theme.socialMenu}/`).items;
     
     return (
       <FooterSection>
           <div className="credits">© {year} Getfused. All rights reserved.</div>
           <Menu>
-              <Link link="/">Home</Link>
-              <Link link="/work">Work</Link>
-              <Link link="/services">Services</Link>
-              <Link link="/about">About</Link>
-              <Link link="/contact">Contact</Link>
-              <Link link="/privacy-policy">Privacy Policy</Link>
+          {footerMenuItems.map((item) => {
+                return (
+                    <Link key={item.ID} link={item.url}>{item.title}</Link>
+                );
+            })}
           </Menu>
           <Menu>
-              <Link link="https://www.facebook.com/Getfused" target="_blank">Facebook</Link>
-              <Link link="https://www.linkedin.com/company/getfused/mycompany/" target="_blank">LinkedIn</Link>
-              <Link link="https://twitter.com/Getfused" target="_blank">Twitter</Link>
+            {socialMenuItems.map((item) => {
+                    return (
+                        <Link key={item.ID} link={item.url} target="_blank" >{item.title}</Link>
+                    );
+                })}
           </Menu>
       </FooterSection>
     );

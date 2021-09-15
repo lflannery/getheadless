@@ -3,7 +3,11 @@ import { connect, Head, Global, css } from 'frontity'
 import Switch from '@frontity/components/switch'
 import Header from './header'
 import Home from './home'
+import Service from './service-landing'
+import About from './about'
+import Contact from './contact'
 import Page from './page'
+import Work from './work'
 import Blog from './blog'
 import Post from './post'
 import Error from './error'
@@ -73,7 +77,11 @@ const Root = ({ state }) => {
         <Switch>
             <Loading when={data.isFetching} />
             <Home when={data.isHome} />
-            <Blog when={data.isArchive} />
+            <Work when={data.route === "/work/"} />
+            <Blog when={data.route === "/blog/"} />
+            <Service when={data.route === "/services/"} />
+            <About when={data.route === "/about/"} />
+            <Contact when={data.route === "/contact/"} />
             <Page when={data.isPage} />
             <Post when={data.isPostType} />
             <Error when={data.isError} />

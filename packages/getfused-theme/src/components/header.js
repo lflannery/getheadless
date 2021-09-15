@@ -3,17 +3,18 @@ import { connect, styled } from 'frontity'
 import Link from '@frontity/components/link'
 
 const Header = ({ state }) => {
+    const primaryMenuItems = state.source.get(`/menu/${state.theme.primaryMenu}/`).items;
 
     return (
       <HeaderSection>
-          <img src="" alt="logo" />
-          <Menu>
-              <Link link="/work">Work</Link>
-              <Link link="/services">Services</Link>
-              <Link link="/about">About</Link>
-              <Link link="/blog">Blog</Link>
-              <Link link="/contact">Contact</Link>
-          </Menu>
+            <img src="" alt="logo" />
+            <Menu>
+                {primaryMenuItems.map((item) => {
+                    return (
+                        <Link key={item.ID} link={item.url}>{item.title}</Link>
+                    );
+                })}
+            </Menu>
       </HeaderSection>
     );
 };

@@ -14,13 +14,18 @@ const Contact = ({ state, libraries }) => {
     return (
       <>
         <Head>
-            <title>{page.title.rendered}</title>
+            <title>{page.title.rendered}- {state.theme.siteName}</title>
             <meta name="description" content={page.excerpt.rendered} />
         </Head>
         <main>
             <TopContent>
                 <h1><Html2React html={page.title.rendered} /></h1>
             </TopContent>
+            <ContentSection>
+                <PageContent>
+                    <Html2React html={page.content.rendered} />
+                </PageContent>
+            </ContentSection>
         </main>
       </>
     );
@@ -36,30 +41,17 @@ const TopContent = styled.div`
     display: block;
   }
 `
-const ServiceGrid = styled.div`
-  max-width: 1140px;
-  margin: auto;  
-  padding: 5rem 0;  
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3.5rem 1rem;
-
-  ul {
-    padding: 0;
-    margin: 2rem 0 0 2.5rem ;
-    text-indent: -2.5rem;
-  }
-
-  li {
-    list-style: none;
-    margin-bottom: .8rem;
-    &:before {
-      content: '';
-      display: inline-block;
-      width: 1.5rem;
-      height: 1.5rem;
-      margin-right: 1rem;
-      vertical-align: bottom;
-    }
-  }
+const ContentSection = styled.div`
+  background: #fff;
+  color: #000;
+  border-top: 14px solid #ffcc00;
+  padding-top: 5.7rem;
+`
+const PageContent = styled.div`
+  margin: auto;
+  max-width: 880px;
+  font-size: 1.176rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 `

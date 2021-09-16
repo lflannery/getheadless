@@ -11,7 +11,7 @@ const Blog = ({ state, actions }) => {
     return (
       <>
         <Head>
-            <title>Blog</title>
+            <title>Blog - {state.theme.siteName}</title>
             <meta name="description" content="Blog Page" />
         </Head>
         <Main>

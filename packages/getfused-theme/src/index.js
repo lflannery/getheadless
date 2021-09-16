@@ -15,6 +15,7 @@ const theme = {
         primaryMenu: "main-nav",
         footerMenu: "footer-nav",
         socialMenu: "social-nav",
+        siteName: "Getfused, Inc.",
         featured: {
           showOnList: false,
           showOnPost: false,

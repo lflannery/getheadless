@@ -14,7 +14,7 @@ const Page = ({ state, libraries }) => {
     return (
       <>
         <Head>
-            <title>{page.title.rendered}</title>
+            <title>{page.title.rendered} - {state.theme.siteName}</title>
             <meta name="description" content={page.excerpt.rendered} />
         </Head>
         <main>

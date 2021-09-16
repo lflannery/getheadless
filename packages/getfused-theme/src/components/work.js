@@ -11,7 +11,7 @@ const Work = ({ state, actions }) => {
     return (
       <>
         <Head>
-            <title>Our Work</title>
+            <title>Our Work - {state.theme.siteName}</title>
             <meta name="description" content="Blog Page" />
         </Head>
         <Main>

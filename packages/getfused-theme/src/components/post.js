@@ -9,7 +9,7 @@ const Post = ({ state, libraries }) => {
     return (
       <>
         <Head>
-            <title>{post.title.rendered}</title>
+            <title>{post.title.rendered} - {state.theme.siteName}</title>
             {/* <meta name="description" content={post.excerpt.rendered} /> */}
         </Head>
         <Main>
@@ -17,10 +17,12 @@ const Post = ({ state, libraries }) => {
                 <h1>{post.title.rendered}</h1>
                 <h2><div dangerouslySetInnerHTML={{ __html: post.acf.subtitle }} /></h2>
                 <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
-                <CallToAction>
-                    <div dangerouslySetInnerHTML={{ __html: post.acf.call_to_action }} />
-                    <Link link={post.acf.cta_link}>{post.acf.cta_label}</Link>
-                </CallToAction>
+                { post.acf.call_to_action ? 
+                    <CallToAction>
+                        <div dangerouslySetInnerHTML={{ __html: post.acf.call_to_action }} />
+                        <Link link={post.acf.cta_link}>{post.acf.cta_label}</Link>
+                    </CallToAction>
+                : null }
             </ContentSection>
         </Main> 
       </>

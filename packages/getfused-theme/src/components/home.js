@@ -33,17 +33,17 @@ const Page = ({ state, libraries }) => {
                 <div>
                     <img src={page.acf.service_1.image} alt="" />
                     <Html2React html={page.acf.service_1.content} />
-                    <Link link={page.acf.service_1.button_link}>{page.acf.service_1.button_text}</Link>
+                    <Link className="yellowArrow" link={page.acf.service_1.button_link}>{page.acf.service_1.button_text}</Link>
                 </div>
                 <div>
                     <img src={page.acf.service_2.image} alt="" />
                     <Html2React html={page.acf.service_2.content} />
-                    <Link link={page.acf.service_2.button_link}>{page.acf.service_2.button_text}</Link>
+                    <Link className="yellowArrow" link={page.acf.service_2.button_link}>{page.acf.service_2.button_text}</Link>
                 </div>
                 <div>
                     <img src={page.acf.service_3.image} alt="" />
                     <Html2React html={page.acf.service_3.content} />
-                    <Link link={page.acf.service_3.button_link}>{page.acf.service_3.button_text}</Link>
+                    <Link className="yellowArrow" link={page.acf.service_3.button_link}>{page.acf.service_3.button_text}</Link>
                 </div>
             </ServiceGrid>
             <Bottom>

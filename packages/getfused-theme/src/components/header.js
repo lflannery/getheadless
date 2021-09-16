@@ -1,13 +1,17 @@
 import React from 'react'
 import { connect, styled } from 'frontity'
 import Link from '@frontity/components/link'
+import Logo from '../images/Logo.png'
 
 const Header = ({ state }) => {
     const primaryMenuItems = state.source.get(`/menu/${state.theme.primaryMenu}/`).items;
 
     return (
       <HeaderSection>
-            <img src="" alt="logo" />
+          <a href="/">
+            <img src={Logo} alt={state.theme.siteName} />
+          </a>
+            
             <Menu>
                 {primaryMenuItems.map((item) => {
                     return (

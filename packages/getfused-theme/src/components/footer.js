@@ -2,6 +2,9 @@ import React from 'react'
 import { connect, styled } from 'frontity'
 import Link from '@frontity/components/link'
 import moment from 'moment'
+import Facebook from '../images/Facebook-Negative.svg'
+import LinkedIn from '../images/LinkedIn.svg'
+import Twitter from '../images/Twitter-Negative.svg'
 
 const Footer = ({ state }) => {
     const year = moment().format('YYYY');

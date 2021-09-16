@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect, Head, styled } from 'frontity'
 import Link from '@frontity/components/link'
+import Bullet from '../images/bullet.png'
 
 
 
@@ -77,7 +78,7 @@ const Page = ({ state, libraries }) => {
                 <div>
                     <span>Get Inspired</span>
                     <h2 className="featuredWork">Featured <Html2React html={page.title.rendered} /> work</h2>
-                    <Link link="/link" className="cta">See our portfolio</Link>
+                    <Link link="/link" className="yellowArrow">See our portfolio</Link>
                 </div>
                 <img src="" alt="" />
                 <img src="" alt="" />
@@ -137,12 +138,13 @@ const ServiceGrid = styled.div`
     list-style: none;
     margin-bottom: .8rem;
     &:before {
-      content: '';
-      display: inline-block;
-      width: 1.5rem;
-      height: 1.5rem;
-      margin-right: 1rem;
-      vertical-align: bottom;
+        background: url(${Bullet}) no-repeat 50%;
+        content: '';
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 1rem;
+        vertical-align: bottom;
     }
   }
 `
@@ -182,7 +184,7 @@ const Bottom = styled.div`
     margin-bottom: 3rem;
   }
 
-  .cta {
+  a {
     font-size: 1.5rem;
     font-weight: 500;
   }

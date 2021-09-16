@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect, Head, styled } from 'frontity'
-import Link from '@frontity/components/link'
+import Bullet from '../images/bullet-yellow.png'
 
 
 
@@ -81,12 +81,20 @@ const ServiceGrid = styled.div`
   
 
   ul {
-      margin-left: 2.5rem;
       margin-bottom: 1.5rem;
 
       li {
         list-style: none;
         margin-bottom: .8rem;
+        &:before {
+            background: url(${Bullet}) no-repeat 50%;
+            content: '';
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 1rem;
+            vertical-align: bottom;
+        }
       }
   }
 

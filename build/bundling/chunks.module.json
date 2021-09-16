@@ -1,18 +1,18 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "2558660925a0e4119be5",
+  "hash": "bc8ce71d82fa5c5bb4ac",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\build\\static",
   "assetsByChunkName": {
     "getfused-frontity": [
       "getfused-frontity.module.js",
-      "getfused-frontity.4be2401ba76ae864dcfb.hot-update.js"
+      "getfused-frontity.ef5b29924da6208d1276.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "4be2401ba76ae864dcfb.hot-update.json",
+      "name": "ef5b29924da6208d1276.hot-update.json",
       "size": 59,
       "chunks": [],
       "chunkNames": [],
@@ -23,8 +23,8 @@
       "emitted": false
     },
     {
-      "name": "getfused-frontity.4be2401ba76ae864dcfb.hot-update.js",
-      "size": 9744,
+      "name": "getfused-frontity.ef5b29924da6208d1276.hot-update.js",
+      "size": 15464,
       "chunks": [
         "getfused-frontity"
       ],
@@ -39,7 +39,7 @@
     },
     {
       "name": "getfused-frontity.module.js",
-      "size": 9042654,
+      "size": 9064552,
       "chunks": [
         "getfused-frontity"
       ],
@@ -47,6 +47,96 @@
         "getfused-frontity"
       ],
       "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/Facebook-Negative.svg",
+      "size": 492,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/getfused-theme/src/images/Facebook-Negative.svg"
+      },
+      "emitted": true
+    },
+    {
+      "name": "images/LinkedIn.svg",
+      "size": 834,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/getfused-theme/src/images/LinkedIn.svg"
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/Logo.png",
+      "size": 2901,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/getfused-theme/src/images/Logo.png"
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/Twitter-Negative.svg",
+      "size": 1366,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/getfused-theme/src/images/Twitter-Negative.svg"
+      },
+      "emitted": true
+    },
+    {
+      "name": "images/arrow.png",
+      "size": 134,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/getfused-theme/src/images/arrow.png"
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/blackArrow.png",
+      "size": 124,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/getfused-theme/src/images/blackArrow.png"
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/bullet-yellow.png",
+      "size": 262,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/getfused-theme/src/images/bullet-yellow.png"
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/bullet.png",
+      "size": 290,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/getfused-theme/src/images/bullet.png"
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/whiteArrow.png",
+      "size": 131,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/getfused-theme/src/images/whiteArrow.png"
+      },
       "emitted": false
     }
   ],
@@ -58,7 +148,7 @@
       ],
       "assets": [
         "getfused-frontity.module.js",
-        "getfused-frontity.4be2401ba76ae864dcfb.hot-update.js"
+        "getfused-frontity.ef5b29924da6208d1276.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -70,7 +160,7 @@
       "id": "getfused-frontity",
       "files": [
         "getfused-frontity.module.js",
-        "getfused-frontity.4be2401ba76ae864dcfb.hot-update.js"
+        "getfused-frontity.ef5b29924da6208d1276.hot-update.js"
       ]
     }
   ]

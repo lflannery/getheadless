@@ -13,6 +13,9 @@ import Post from './post'
 import Error from './error'
 import Loading from './loading'
 import Footer from './footer'
+import YellowArrow from '../images/arrow.png'
+import WhiteArrow from '../images/whiteArrow.png'
+import BlackArrow from '../images/blackArrow.png'
 
 const Root = ({ state }) => {
     const data = state.source.get(state.router.link)
@@ -67,6 +70,42 @@ const Root = ({ state }) => {
                     color: #ffcc00;
                     font-weight: 500;
                     text-decoration: none;
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        width: 1rem;
+                        height: 1rem;
+                        margin-left: .5rem;
+                        vertical-align: middle;
+                        transition: ease-in-out .2s;
+                    }
+                    &.yellowArrow {
+                        &:after {
+                            background: url(${YellowArrow}) no-repeat 50%;
+                            background-size: contain;
+                        }
+                        &:hover:after {
+                            transform: translateX(4px);
+                        }
+                    }
+                    &.whiteArrow {
+                        &:after {
+                            background: url(${WhiteArrow}) no-repeat 50%;
+                            background-size: contain;
+                        }
+                        &:hover:after {
+                            transform: translateX(4px);
+                        }
+                    }
+                    &.blackArrow {
+                        &:after {
+                            background: url(${BlackArrow}) no-repeat 50%;
+                            background-size: contain;
+                        }
+                        &:hover:after {
+                            transform: translateX(4px);
+                        }
+                    }
                 }
                 p {
                     margin-bottom: 1.5rem;

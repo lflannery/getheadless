@@ -14,14 +14,14 @@ const Footer = ({ state }) => {
           <Menu>
           {footerMenuItems.map((item) => {
                 return (
-                    <Link key={item.ID} link={item.url}>{item.title}</Link>
+                    <Link key={item.ID} link={item.url} target={item.target}>{item.title}</Link>
                 );
             })}
           </Menu>
           <Menu>
             {socialMenuItems.map((item) => {
                     return (
-                        <Link key={item.ID} link={item.url} target="_blank" >{item.title}</Link>
+                        <Link key={item.ID} link={item.url} target={item.target} >{item.title}</Link>
                     );
                 })}
           </Menu>

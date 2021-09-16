@@ -11,7 +11,7 @@ const Header = ({ state }) => {
             <Menu>
                 {primaryMenuItems.map((item) => {
                     return (
-                        <Link key={item.ID} link={item.url}>{item.title}</Link>
+                        <Link key={item.ID} link={item.url} target={item.target}>{item.title}</Link>
                     );
                 })}
             </Menu>

@@ -21,6 +21,13 @@ const settings = {
           "url": "https://comparisonsite.wpengine.com/",
           "homepage": "/home",
           "postsPage": "/blog",
+          "postTypes": [
+              {
+                  "type": "case-study",
+                  "endpoint": "case-study",
+                  "archive": "/work"
+              }
+          ]
         }
       }
     },

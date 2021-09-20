@@ -6,16 +6,34 @@ import Link from '@frontity/components/link'
 
 const Work = ({ state, actions }) => {
     const data = state.source.get(state.router.link)
-    const categories = state.source.category
     
     return (
       <>
         <Head>
             <title>Our Work - {state.theme.siteName}</title>
-            <meta name="description" content="Blog Page" />
+            <meta name="description" content="Portfolio Page" />
         </Head>
         <Main>
-            <h1>Our Work</h1>
+            <TopContent>
+                <h1>Our Work</h1>
+                <h2 className="subtitle">Drive your results.</h2>
+            </TopContent>
+            <Items>
+                {data.items.map((item) => {
+                    const post = state.source[item.type][item.id]
+
+                    return (
+                        <article className="listingItem" key={item.id} style={{background: `url(${post.acf.thumbnail})` }}>
+                            <h3>
+                                <Link link={post.link}>
+                                    <div dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                                </Link>
+                            </h3>
+                            <div dangerouslySetInnerHTML={{ __html: post.acf.subtitle }} />
+                        </article>
+                    )
+                })}
+            </Items> 
         </Main>
       </>
     );
@@ -27,37 +45,19 @@ const Main = styled.main`
     max-width: 1792px;
     margin: auto;
 `
-
-const CategoryList = styled.ul`
-    display: flex;
-    margin: 1rem 0 2rem;
-`
-
-const Category = styled.li`
-    font-size: 2.5rem;
-    padding: .875rem 3rem .875rem 0;
-    list-style: none;
-
-    a:hover {
-        text-decoration: underline;
-    }
+const TopContent = styled.div`
+    text-align: center;
 `
 const Items = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2rem;
-    color: #ccc;
+    grid-template-columns: repeat(3, 1fr);
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
 
-    h3 a {
-        font-weight: 500;
-        color: #fff;
-        &:hover {
-            text-decoration: underline;
-        }
+    .listingItem {
+        min-height: 200px;
     }
-    .listingImage {
-        max-width: 100%;
-    }  
 `
 const PrevNextNav = styled.div`
   padding-top: 1.5em;

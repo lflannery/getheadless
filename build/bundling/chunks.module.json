@@ -1,18 +1,18 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "bc8ce71d82fa5c5bb4ac",
+  "hash": "b19a6f55f120456df287",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\build\\static",
   "assetsByChunkName": {
     "getfused-frontity": [
       "getfused-frontity.module.js",
-      "getfused-frontity.ef5b29924da6208d1276.hot-update.js"
+      "getfused-frontity.31c187c5ce409b8b0978.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "ef5b29924da6208d1276.hot-update.json",
+      "name": "31c187c5ce409b8b0978.hot-update.json",
       "size": 59,
       "chunks": [],
       "chunkNames": [],
@@ -23,8 +23,8 @@
       "emitted": false
     },
     {
-      "name": "getfused-frontity.ef5b29924da6208d1276.hot-update.js",
-      "size": 15464,
+      "name": "getfused-frontity.31c187c5ce409b8b0978.hot-update.js",
+      "size": 24034,
       "chunks": [
         "getfused-frontity"
       ],
@@ -39,7 +39,7 @@
     },
     {
       "name": "getfused-frontity.module.js",
-      "size": 9064552,
+      "size": 9066804,
       "chunks": [
         "getfused-frontity"
       ],
@@ -57,7 +57,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/Facebook-Negative.svg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/LinkedIn.svg",
@@ -87,7 +87,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/Twitter-Negative.svg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/arrow.png",
@@ -148,7 +148,7 @@
       ],
       "assets": [
         "getfused-frontity.module.js",
-        "getfused-frontity.ef5b29924da6208d1276.hot-update.js"
+        "getfused-frontity.31c187c5ce409b8b0978.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -160,7 +160,7 @@
       "id": "getfused-frontity",
       "files": [
         "getfused-frontity.module.js",
-        "getfused-frontity.ef5b29924da6208d1276.hot-update.js"
+        "getfused-frontity.31c187c5ce409b8b0978.hot-update.js"
       ]
     }
   ]

@@ -33,8 +33,6 @@ const Root = ({ state }) => {
                     box-sizing: border-box;
                 }
                 html, body {
-                    // margin: auto;
-                    // max-width: 1792px;
                     font: 300 16px/24px 'Poppins', sans-serif;
                     background: #000;
                     color: #fff;

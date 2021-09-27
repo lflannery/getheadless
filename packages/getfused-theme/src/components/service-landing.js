@@ -1,13 +1,11 @@
 import React from 'react'
-import { connect, Head, styled } from 'frontity'
-import Bullet from '../images/bullet-yellow.png'
-
-
+import { connect, Head } from 'frontity'
+import TopContent from './styles/topContent'
+import GridContent from './styles/gridContent'
 
 const Service = ({ state, libraries }) => {
     const data = state.source.get(state.router.link)
     const page = state.source[data.type][data.id]
-    const image = state.source.attachment[page.featured_media]
 
     const Html2React = libraries.html2react.Component
     
@@ -21,7 +19,7 @@ const Service = ({ state, libraries }) => {
             <TopContent>
                 <h1><Html2React html={page.title.rendered} /></h1>
             </TopContent>
-            <ServiceGrid>
+            <GridContent>
                 { page.acf.service_1 ? 
                     <div>
                         <img src={page.acf.service_1.image} alt="" />
@@ -40,66 +38,10 @@ const Service = ({ state, libraries }) => {
                         <Html2React html={page.acf.service_3.content} />
                     </div>
                 : null }
-            </ServiceGrid>
+            </GridContent>
         </main>
       </>
     );
 };
 
 export default connect(Service)
-
-const TopContent = styled.div`
-  text-align: center;
-
-  .featuredImage {
-    margin: -2rem auto 0;
-    display: block;
-  }
-`
-const ServiceGrid = styled.div`
-  padding: 2.5rem 2rem 6rem;  
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3.5rem;
-
-  div {
-      background: #1a1a1a;
-      padding: 1rem;
-  }
-
-  img {
-      max-width: 100%;
-  }
-
-  h2 {
-    margin-bottom: 1.2rem;
-    
-    a {
-        color: #fff;
-    }
-  }
-  
-
-  ul {
-      margin-bottom: 1.5rem;
-
-      li {
-        list-style: none;
-        margin-bottom: .8rem;
-        &:before {
-            background: url(${Bullet}) no-repeat 50%;
-            content: '';
-            display: inline-block;
-            width: 1.5rem;
-            height: 1.5rem;
-            margin-right: 1rem;
-            vertical-align: bottom;
-        }
-      }
-  }
-
-  p a {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-`

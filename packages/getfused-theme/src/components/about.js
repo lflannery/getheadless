@@ -1,8 +1,13 @@
 import React from 'react'
-import { connect, Head, styled } from 'frontity'
-import Link from '@frontity/components/link'
-
-
+import { connect, Head } from 'frontity'
+import TopContent from './styles/topContent'
+import ContentSection from './styles/contentSection'
+import PageContent from './styles/pageContent'
+import Stats from './styles/stats'
+import Philanthropy from './styles/philanthropy'
+import Logos from './styles/logos'
+import Approach from './styles/approach'
+import Directions from './styles/directions'
 
 const About = ({ state, libraries }) => {
     const data = state.source.get(state.router.link)
@@ -81,124 +86,15 @@ const About = ({ state, libraries }) => {
             <Approach>
                 <Html2React html={page.acf.approach} />
             </Approach>
-            <Bottom>
+            <Directions>
                 <img src={page.acf.map} alt="" />
                 <div className="content">
                     <Html2React html={page.acf.visit_us} />
                 </div>
-            </Bottom>
+            </Directions>
         </main>
       </>
     );
 };
 
 export default connect(About)
-
-const TopContent = styled.div`
-  text-align: center;
-
-  .featuredImage {
-    margin: -2rem auto 0;
-    display: block;
-  }
-`
-const ContentSection = styled.div`
-  background: #fff;
-  color: #000;
-  border-top: 14px solid #ffcc00;
-  padding-top: 5.7rem;
-`
-const PageContent = styled.div`
-  margin: auto;
-  max-width: 880px;
-  font-size: 1.176rem;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-`
-const Stats = styled.div`
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 1.8;
-  padding: 3rem 2rem 6rem;
-
-  .number {
-      color: #ffcc00;
-      font-weight: 600;
-      font-size: 4.5rem;
-      line-height: 1;
-  }
-`
-
-const Philanthropy = styled.div`
-  display: grid;
-  grid-template-columns: 49% 49%;
-  grid-gap: 2%;
-  background: #1a1a1a;
-  padding: 4rem;
-
-  h2 {
-      margin-bottom: 1.5rem;
-  }
-
-  iframe {
-      justify-self: end;
-  }
-`
-
-const Logos = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 2rem;
-  background: #fff;
-
-  img {
-      width: 100%;
-      max-height: 150px;
-      max-width: unset;
-  }
-`
-
-const Approach = styled.div`
-  margin: auto;
-  max-width: 880px;
-  padding: 2rem;
-
-  a {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: inherit;
-  }
-`
-
-const Bottom = styled.div` 
-  display: grid;
-  grid-template-columns: 50% 50%;
-  align-items: center;
-  background: #ffcc00;
-  color: #000;
-
-  img {
-      width: 100%;
-      height: 450px;
-      object-fit: cover;
-  }
-
-  .content {
-      padding: 2rem;
-
-      h2 {
-          margin-bottom: 1.5rem;
-      }
-      
-      a {
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: #000;
-      }
-  }
-`

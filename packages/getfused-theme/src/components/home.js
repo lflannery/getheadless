@@ -110,12 +110,6 @@ const ServiceGrid = styled.div`
     font-weight: 500;
   }
 `
-const MarketingPanel = styled.div`
-  background: #1a1a1a;
-  color: #fff;
-  text-align: center;
-  padding: 6.2rem 0 6.5rem 0;
-`
 const Bottom = styled.div` 
   display: grid;
   grid-template-columns: 50% 50%;

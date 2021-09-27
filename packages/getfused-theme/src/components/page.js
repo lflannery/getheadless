@@ -1,9 +1,12 @@
 import React from 'react'
-import { connect, Head, styled } from 'frontity'
+import { connect, Head } from 'frontity'
 import Link from '@frontity/components/link'
-import Bullet from '../images/bullet.png'
-
-
+import TopContent from './styles/topContent'
+import ContentSection from './styles/contentSection'
+import PageContent from './styles/pageContent'
+import ServiceGrid from './styles/serviceGrid'
+import MarketingPanel from './styles/marketingPanel'
+import Bottom from './styles/bottom'
 
 const Page = ({ state, libraries }) => {
     const data = state.source.get(state.router.link)
@@ -96,96 +99,3 @@ const Page = ({ state, libraries }) => {
 };
 
 export default connect(Page)
-
-const TopContent = styled.div`
-  text-align: center;
-
-  .featuredImage {
-    margin: -2rem auto 0;
-    display: block;
-  }
-`
-const ContentSection = styled.div`
-  background: #fff;
-  color: #000;
-  border-top: 14px solid #ffcc00;
-  padding-top: 5.7rem;
-`
-const PageContent = styled.div`
-  margin: auto;
-  max-width: 880px;
-  font-size: 1.176rem;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-}
-`
-const ServiceGrid = styled.div`
-  max-width: 1140px;
-  margin: auto;  
-  padding: 5rem 0;  
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3.5rem 1rem;
-
-  ul {
-    padding: 0;
-    margin: 2rem 0 0 2.5rem ;
-    text-indent: -2.5rem;
-  }
-
-  li {
-    list-style: none;
-    margin-bottom: .8rem;
-    &:before {
-        background: url(${Bullet}) no-repeat 50%;
-        content: '';
-        display: inline-block;
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-right: 1rem;
-        vertical-align: bottom;
-    }
-  }
-`
-const MarketingPanel = styled.div`
-  background: #1a1a1a;
-  color: #fff;
-  text-align: center;
-  padding: 6.2rem 0 6.5rem 0;
-
-  h2 {
-      margin-bottom: 2.5rem;
-  }
-
-  img {
-      margin: 0 1rem;
-  }
-`
-const Bottom = styled.div`
-  margin: auto;  
-  max-width: 1792px;  
-  display: grid;
-  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-  grid-gap: 3.5rem 1rem;
-  padding-top: 6.5rem;
-
-  h2 {
-    font-size: 3.75vw;
-    &.featuredWork {
-      padding: 10% 0% 10% 0%;
-    }
-  }
-
-  p {
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.5em;
-    margin-bottom: 3rem;
-  }
-
-  a {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-`

@@ -1,6 +1,8 @@
 import React from 'react'
-import { connect, Head, styled } from 'frontity'
-import Link from '@frontity/components/link'
+import { connect, Head } from 'frontity'
+import TopContent from './styles/topContent'
+import ContentSection from './styles/contentSection'
+import PageContent from './styles/pageContent'
 
 
 
@@ -32,26 +34,3 @@ const Contact = ({ state, libraries }) => {
 };
 
 export default connect(Contact)
-
-const TopContent = styled.div`
-  text-align: center;
-
-  .featuredImage {
-    margin: -2rem auto 0;
-    display: block;
-  }
-`
-const ContentSection = styled.div`
-  background: #fff;
-  color: #000;
-  border-top: 14px solid #ffcc00;
-  padding-top: 5.7rem;
-`
-const PageContent = styled.div`
-  margin: auto;
-  max-width: 880px;
-  font-size: 1.176rem;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-`

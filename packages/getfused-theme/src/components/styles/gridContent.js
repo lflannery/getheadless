@@ -17,13 +17,17 @@ const GridContent = styled.div`
     }
 
     h2 {
-    margin-bottom: 1.2rem;
-    
-    a {
-        color: #fff;
-    }
+        margin-bottom: 1.2rem;
     }
 
+    h3 {
+        margin-bottom: 1rem;
+    }
+    
+    a {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
 
     ul {
         margin-bottom: 1.5rem;
@@ -44,8 +48,8 @@ const GridContent = styled.div`
     }
 
     p a {
-    font-size: 1.5rem;
-    font-weight: 500;
+        font-size: 1.5rem;
+        font-weight: 500;
     }
 `
 export default GridContent

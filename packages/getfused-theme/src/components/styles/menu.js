@@ -12,6 +12,7 @@ const Menu = styled.nav`
     }   
     .social {
         font-size: 0px;
+        margin-right: 0;
         &:before {
             content: '';
             width: 2rem;

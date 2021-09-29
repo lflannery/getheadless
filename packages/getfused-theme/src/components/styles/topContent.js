@@ -6,6 +6,7 @@ const TopContent = styled.div`
   .featuredImage {
     margin: -2rem auto 0;
     display: block;
+    max-width: 100%;
   }
 `
 export default TopContent;

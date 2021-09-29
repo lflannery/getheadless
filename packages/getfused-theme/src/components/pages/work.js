@@ -3,7 +3,7 @@ import { connect, Head } from 'frontity'
 import Link from '@frontity/components/link'
 import Main from '../styles/main'
 import TopContent from '../styles/topContent'
-import BlogItems from '../styles/BlogItems'
+import BlogItems from '../styles/blogItems'
 import Pagination from '../styles/pagination'
 
 const Work = ({ state, actions }) => {

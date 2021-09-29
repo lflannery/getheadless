@@ -18,6 +18,13 @@ const GridContent = styled.div`
 
     h2 {
         margin-bottom: 1.2rem;
+        a {
+            color: #fff;
+            font-size: 2.5rem;
+            &:hover, &:focus {
+                text-decoration: underline;
+            }
+        }
     }
 
     h3 {

@@ -5,6 +5,7 @@ import Header from './pages/header'
 import Home from './pages/home'
 import Service from './pages/service-landing'
 import About from './pages/about'
+import Team from './pages/team'
 import Contact from './pages/contact'
 import Page from './pages/page'
 import Work from './pages/work'
@@ -118,6 +119,7 @@ const Root = ({ state }) => {
             <Blog when={data.route === "/blog/"} />
             <Service when={data.route === "/services/"} />
             <About when={data.route === "/about/"} />
+            <Team when={data.route === "/about/team/"} />
             <Contact when={data.route === "/contact/"} />
             <Page when={data.isPage} />
             <Post when={data.isPostType} />

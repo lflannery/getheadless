@@ -1,47 +1,16 @@
 {
   "errors": [],
-  "warnings": [
-    "./packages/getfused-theme/src/components/styles/BlogItems.js\nThere are multiple modules with names that only differ in casing.\nThis can lead to unexpected behavior when compiling on a filesystem with other case-semantic.\nUse equal casing. Compare these module identifiers:\n* C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\node_modules\\babel-loader\\lib\\index.js??ref--4!C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\packages\\getfused-theme\\src\\components\\styles\\BlogItems.js\n    Used by 2 module(s), i. e.\n    C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\node_modules\\babel-loader\\lib\\index.js??ref--4!C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\packages\\getfused-theme\\src\\components\\pages\\work.js\n* C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\node_modules\\babel-loader\\lib\\index.js??ref--4!C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\packages\\getfused-theme\\src\\components\\styles\\blogItems.js\n    Used by 2 module(s), i. e.\n    C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\node_modules\\babel-loader\\lib\\index.js??ref--4!C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\packages\\getfused-theme\\src\\components\\pages\\blog.js"
-  ],
-  "hash": "7b112805df2b53333ce1",
+  "warnings": [],
+  "hash": "109a3c8c4d82e17bc086",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\build\\static",
   "assetsByChunkName": {
-    "getfused-frontity": [
-      "getfused-frontity.module.js",
-      "getfused-frontity.1c41cadf84e128bf9dcb.hot-update.js"
-    ]
+    "getfused-frontity": "getfused-frontity.module.js"
   },
   "assets": [
     {
-      "name": "1c41cadf84e128bf9dcb.hot-update.json",
-      "size": 59,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
-      "name": "getfused-frontity.1c41cadf84e128bf9dcb.hot-update.js",
-      "size": 9784,
-      "chunks": [
-        "getfused-frontity"
-      ],
-      "chunkNames": [
-        "getfused-frontity"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
       "name": "getfused-frontity.module.js",
-      "size": 8896859,
+      "size": 8905234,
       "chunks": [
         "getfused-frontity"
       ],
@@ -149,8 +118,7 @@
         "getfused-frontity"
       ],
       "assets": [
-        "getfused-frontity.module.js",
-        "getfused-frontity.1c41cadf84e128bf9dcb.hot-update.js"
+        "getfused-frontity.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -161,8 +129,7 @@
     {
       "id": "getfused-frontity",
       "files": [
-        "getfused-frontity.module.js",
-        "getfused-frontity.1c41cadf84e128bf9dcb.hot-update.js"
+        "getfused-frontity.module.js"
       ]
     }
   ]

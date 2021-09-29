@@ -26,7 +26,12 @@ const settings = {
                   "type": "case-study",
                   "endpoint": "case-study",
                   "archive": "/work"
-              }
+              },
+              {
+                "type": "team",
+                "endpoint": "team",
+                "archive": "/about/team"
+            }
           ]
         }
       }

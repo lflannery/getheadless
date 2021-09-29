@@ -9,15 +9,22 @@ const Menu = styled.nav`
         font-weight: 500;
         text-decoration: none;
         margin-right: 4rem;
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
     }   
     .social {
         font-size: 0px;
         margin-right: 0;
+        &:hover:before, &:focus:before {
+            transform: translateY(-5px);
+        }
         &:before {
             content: '';
             width: 2rem;
             height: 2rem;
             display: inline-block;
+            transition: all .3s;
         }
         &.facebook:before {
             background: url(${Facebook}) 50% no-repeat;

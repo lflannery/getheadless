@@ -4,6 +4,7 @@ import Link from '@frontity/components/link'
 import HeaderFooter from '../styles/headerFooter'
 import Menu from '../styles/menu'
 import Logo from '../../images/Logo.png'
+import Search from '../../images/search.svg'
 
 const Header = ({ state }) => {
     const primaryMenuItems = state.source.get(`/menu/${state.theme.primaryMenu}/`).items;
@@ -20,6 +21,9 @@ const Header = ({ state }) => {
                             <Link key={item.ID} link={item.url} target={item.target}>{item.title}</Link>
                         );
                     })}
+                    <a href="/?s=">
+                        <img src={Search} alt="Search Website" />
+                    </a>
                 </Menu>
             </HeaderFooter>
         </header>

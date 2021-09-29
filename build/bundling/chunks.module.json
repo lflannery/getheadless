@@ -1,16 +1,45 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "109a3c8c4d82e17bc086",
+  "hash": "d6dfcc3a09eeb90cb451",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\build\\static",
   "assetsByChunkName": {
-    "getfused-frontity": "getfused-frontity.module.js"
+    "getfused-frontity": [
+      "getfused-frontity.module.js",
+      "getfused-frontity.f5cb64d20f357022abe2.hot-update.js"
+    ]
   },
   "assets": [
     {
+      "name": "f5cb64d20f357022abe2.hot-update.json",
+      "size": 59,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "getfused-frontity.f5cb64d20f357022abe2.hot-update.js",
+      "size": 17458,
+      "chunks": [
+        "getfused-frontity"
+      ],
+      "chunkNames": [
+        "getfused-frontity"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "getfused-frontity.module.js",
-      "size": 8905234,
+      "size": 8939701,
       "chunks": [
         "getfused-frontity"
       ],
@@ -101,6 +130,16 @@
       "emitted": false
     },
     {
+      "name": "images/search.svg",
+      "size": 698,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "sourceFilename": "packages/getfused-theme/src/images/search.svg"
+      },
+      "emitted": false
+    },
+    {
       "name": "images/whiteArrow.png",
       "size": 131,
       "chunks": [],
@@ -118,7 +157,8 @@
         "getfused-frontity"
       ],
       "assets": [
-        "getfused-frontity.module.js"
+        "getfused-frontity.module.js",
+        "getfused-frontity.f5cb64d20f357022abe2.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -129,7 +169,8 @@
     {
       "id": "getfused-frontity",
       "files": [
-        "getfused-frontity.module.js"
+        "getfused-frontity.module.js",
+        "getfused-frontity.f5cb64d20f357022abe2.hot-update.js"
       ]
     }
   ]

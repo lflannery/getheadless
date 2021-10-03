@@ -7,7 +7,7 @@ const Stats = styled.div`
   font-size: 19px;
   font-weight: 400;
   line-height: 1.8;
-  padding: 3rem 2rem 6rem;
+  padding: 3rem 2rem 2rem;
 
   .number {
       color: #ffcc00;

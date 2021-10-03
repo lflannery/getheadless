@@ -7,11 +7,13 @@ import PageContent from '../styles/pageContent';
 import Title from '../styles/title'
 import GridContent from '../styles/gridContent';
 import Directions from '../styles/directions';
+import Items from '../styles/items'
 
 const Page = ({ state, libraries }) => {
     const data = state.source.get(state.router.link)
     const page = state.source[data.type][data.id]
     const image = state.source.attachment[page.featured_media]
+    const recentPost = state.source.get(`/recent-case-study`)
 
     const Html2React = libraries.html2react.Component
     
@@ -30,6 +32,21 @@ const Page = ({ state, libraries }) => {
                     <Html2React html={page.content.rendered} />
                 </PageContent>
             </ContentSection>
+            <Items>
+                {recentPost.items.map((item) => {
+                    const post = state.source[item.type][item.id]
+
+                    return (
+                        <article className="listingItem" key={item.id}>
+                            <Link link={post.link} key={item.id}>
+                                <img className="listingImage" src={post.acf.thumbnail} alt='' />
+                                <h3><span dangerouslySetInnerHTML={{ __html: post.title.rendered }} /></h3>
+                                <div dangerouslySetInnerHTML={{ __html: post.acf.subtitle }} />
+                            </Link>
+                        </article>
+                    )
+                })}
+            </Items> 
             <Title>
                 <h2>
                     <Html2React html={page.acf.services_heading} />

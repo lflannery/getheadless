@@ -6,8 +6,9 @@ import Main from '../../styles/main'
 import TopContent from "../../styles/topContent";
 import Items from '../../styles/items'
 import Pagination from '../../styles/pagination'
+import Button from "../../styles/button";
 
-const SearchResults = ({ state, libraries }) => {
+const SearchResults = ({ state, libraries, actions }) => {
   // Get the current path or link
   const currentPath = state.router.link;
   const data = state.source.get(state.router.link)
@@ -60,22 +61,22 @@ const SearchResults = ({ state, libraries }) => {
             </Items> 
             <Pagination>
                 {data.previous && (
-                <button
+                <Button
                     onClick={() => {
                     actions.router.set(data.previous)
                     }}
                 >
                     &#171; Prev
-                </button>
+                </Button>
                 )}
                 {data.next && (
-                <button
+                <Button
                     onClick={() => {
                     actions.router.set(data.next)
                     }}
                 >
                     Next &#187;
-                </button>
+                </Button>
                 )}
             </Pagination>
         </Main>

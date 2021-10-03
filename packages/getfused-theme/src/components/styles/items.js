@@ -5,6 +5,9 @@ const Items = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
     margin-top: 2rem;
+    &.wide {
+        grid-template-columns: repeat(3, 1fr);
+    }
     
     h3 {
         color: #fff;

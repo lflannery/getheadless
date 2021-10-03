@@ -23,7 +23,7 @@ const settings = {
             "per_page": 16,
             "order_by": "date",
             "order": "desc",
-            "type": ["post"],
+            "type": ["post", "pages", "team"],
           },
           "homepage": "/home",
           "postsPage": "/blog",

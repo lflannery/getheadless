@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect, Head } from 'frontity'
+import Link from '@frontity/components/link'
 import TopContent from '../styles/topContent'
 import ContentSection from '../styles/contentSection'
 import PageContent from '../styles/pageContent'
@@ -8,11 +9,14 @@ import Philanthropy from '../styles/philanthropy'
 import Logos from '../styles/logos'
 import Approach from '../styles/approach'
 import Directions from '../styles/directions'
+import Items from '../styles/items'
+import Placeholder from '../../images/placeholder.jpg'
 
 const About = ({ state, libraries }) => {
     const data = state.source.get(state.router.link)
     const page = state.source[data.type][data.id]
     const image = state.source.attachment[page.featured_media]
+    const leadership = state.source.get(`/leadership`)
 
     const Html2React = libraries.html2react.Component
     
@@ -22,7 +26,7 @@ const About = ({ state, libraries }) => {
             <title>{page.title.rendered}- {state.theme.siteName}</title>
             <meta name="description" content={page.excerpt.rendered} />
         </Head>
-        <main>
+         <main>
             <TopContent>
                 <h1><Html2React html={page.title.rendered} /></h1>
                 <h2 className="subtitle"><Html2React html={page.acf.subtitle} /></h2>
@@ -57,6 +61,27 @@ const About = ({ state, libraries }) => {
                     </div>
                 </Stats>
             </ContentSection>
+            <Items className="wide">
+                <article className="listingItem">
+                    <Link link="/about/team">
+                        <img className="listingImage" src={Placeholder} alt='' />
+                        <h3>Meet the Team</h3>
+                    </Link>
+                </article>
+                {leadership.items.map((item) => {
+                    const post = state.source[item.type][item.id]
+
+                    return (
+                        <article className="listingItem" key={item.id}>
+                            <Link link={post.link} key={item.id}>
+                                <img className="listingImage" src={post.acf.thumbnail_image} alt='' />
+                                <h3><span dangerouslySetInnerHTML={{ __html: post.title.rendered }} /></h3>
+                                <div dangerouslySetInnerHTML={{ __html: post.acf.job_title }} />
+                            </Link>
+                        </article>
+                    )
+                })}
+            </Items> 
             <Philanthropy>
                 <Html2React html={page.acf.video} />
                 <div>
@@ -91,7 +116,7 @@ const About = ({ state, libraries }) => {
                 <div className="content">
                     <Html2React html={page.acf.visit_us} />
                 </div>
-            </Directions>
+            </Directions> 
         </main>
       </>
     );

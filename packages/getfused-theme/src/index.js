@@ -3,6 +3,9 @@ import link from '@frontity/html2react/processors/link'
 import menuHandler from './components/handlers/menu-handler';
 import caseStudyHandler from './components/handlers/case-study-handler';
 import teamHandler from './components/handlers/team-handler';
+import recentBlogHandler from './components/handlers/recent-case-study-handler';
+import recentCaseStudyHandler from './components/handlers/recent-case-study-handler';
+import leadershipHandler from './components/handlers/leadership-handler';
 
 
 const theme = {
@@ -12,7 +15,6 @@ const theme = {
   },
   state: {
     theme: {
-        autoPrefetch: "in-view",
         menu: [],
         primaryMenu: "main-nav",
         footerMenu: "footer-nav",
@@ -30,6 +32,8 @@ const theme = {
         await actions.source.fetch(`/menu/${state.theme.primaryMenu}/`);
         await actions.source.fetch(`/menu/${state.theme.footerMenu}/`);
         await actions.source.fetch(`/menu/${state.theme.socialMenu}/`);
+        await actions.source.fetch(`/recent-case-study`)
+        await actions.source.fetch(`/leadership`)
       },
     },
   },
@@ -38,7 +42,7 @@ const theme = {
         processors: [link]
     },
     source: {
-        handlers: [menuHandler, caseStudyHandler, teamHandler]
+        handlers: [menuHandler, caseStudyHandler, teamHandler, recentCaseStudyHandler, leadershipHandler]
     },
   }
 }

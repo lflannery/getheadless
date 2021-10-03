@@ -32,7 +32,7 @@ const Page = ({ state, libraries }) => {
                     <Html2React html={page.content.rendered} />
                 </PageContent>
             </ContentSection>
-            <Items>
+            <Items className="wide">
                 {recentPost.items.map((item) => {
                     const post = state.source[item.type][item.id]
 

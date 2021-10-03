@@ -19,7 +19,7 @@ const Work = ({ state }) => {
                 <h1>Our Work</h1>
                 <h2 className="subtitle">Drive your results.</h2>
             </TopContent>
-            <Items>
+            <Items className="wide">
                 {data.items.map((item) => {
                     const post = state.source[item.type][item.id]
 

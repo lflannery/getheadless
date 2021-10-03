@@ -4,9 +4,9 @@ const recentCaseStudyHandler = {
       const response = await libraries.source.api.get({
         endpoint: "/wp/v2/case-study",
         params: {
-            per_page: 4,
+            per_page: 3,
             order_by: 'date',
-            order: "desc"
+            order: "asc"
           }
       });
   

@@ -11,7 +11,6 @@ const SearchResults = ({ state, libraries }) => {
   // Get the current path or link
   const currentPath = state.router.link;
   const data = state.source.get(state.router.link)
-  console.log(data)
 
   // Get the total pages that match the current path/url
   const { total } = state.source.data[currentPath];

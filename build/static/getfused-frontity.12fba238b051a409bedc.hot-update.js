@@ -1,0 +1,15 @@
+webpackHotUpdate("getfused-frontity",{
+
+/***/ "./packages/getfused-theme/src/components/styles/pagination.js":
+/*!*********************************************************************!*\
+  !*** ./packages/getfused-theme/src/components/styles/pagination.js ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var frontity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! frontity */ \"./node_modules/frontity/dist/src/index.js\");\n/* harmony import */ var frontity__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(frontity__WEBPACK_IMPORTED_MODULE_0__);\nfunction _EMOTION_STRINGIFIED_CSS_ERROR__(){return\"You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop).\";}const Pagination=Object(frontity__WEBPACK_IMPORTED_MODULE_0__[\"styled\"])(\"div\", false?undefined:{target:\"ek1qs80\",label:\"Pagination\"})( false?undefined:{name:\"1jbelfe\",styles:\"padding-top:1.5em\",map:\"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcbGZsYW5uZXJ5XFxEb2N1bWVudHNcXEdpdEh1YlxcZ2V0aGVhZGxlc3NcXHBhY2thZ2VzXFxnZXRmdXNlZC10aGVtZVxcc3JjXFxjb21wb25lbnRzXFxzdHlsZXNcXHBhZ2luYXRpb24uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRTZCIiwiZmlsZSI6IkM6XFxVc2Vyc1xcbGZsYW5uZXJ5XFxEb2N1bWVudHNcXEdpdEh1YlxcZ2V0aGVhZGxlc3NcXHBhY2thZ2VzXFxnZXRmdXNlZC10aGVtZVxcc3JjXFxjb21wb25lbnRzXFxzdHlsZXNcXHBhZ2luYXRpb24uanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBzdHlsZWQgfSBmcm9tICdmcm9udGl0eSdcclxuXHJcbmNvbnN0IFBhZ2luYXRpb24gPSBzdHlsZWQuZGl2YFxyXG4gIHBhZGRpbmctdG9wOiAxLjVlbTtcclxuYFxyXG5leHBvcnQgZGVmYXVsdCBQYWdpbmF0aW9uOyJdfQ== */\",toString:_EMOTION_STRINGIFIED_CSS_ERROR__});/* harmony default export */ __webpack_exports__[\"default\"] = (Pagination);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWNrYWdlcy9nZXRmdXNlZC10aGVtZS9zcmMvY29tcG9uZW50cy9zdHlsZXMvcGFnaW5hdGlvbi5qcz9lNzM4Il0sIm5hbWVzIjpbIlBhZ2luYXRpb24iXSwibWFwcGluZ3MiOiI7OztxUkFFQSxLQUFNQSxXQUFVLDQ0QkFBaEIsQ0FHZUEseUVBQWYiLCJmaWxlIjoiLi9wYWNrYWdlcy9nZXRmdXNlZC10aGVtZS9zcmMvY29tcG9uZW50cy9zdHlsZXMvcGFnaW5hdGlvbi5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHN0eWxlZCB9IGZyb20gJ2Zyb250aXR5J1xyXG5cclxuY29uc3QgUGFnaW5hdGlvbiA9IHN0eWxlZC5kaXZgXHJcbiAgcGFkZGluZy10b3A6IDEuNWVtO1xyXG5gXHJcbmV4cG9ydCBkZWZhdWx0IFBhZ2luYXRpb247Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./packages/getfused-theme/src/components/styles/pagination.js\n");
+
+/***/ })
+
+})

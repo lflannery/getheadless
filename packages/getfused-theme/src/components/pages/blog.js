@@ -6,6 +6,7 @@ import CategoryList from '../styles/categoryList'
 import Category from '../styles/category'
 import Items from '../styles/items'
 import Pagination from '../styles/pagination'
+import Button from '../styles/button'
 
 const Blog = ({ state, actions }) => {
     const data = state.source.get(state.router.link)
@@ -46,22 +47,22 @@ const Blog = ({ state, actions }) => {
             </Items> 
             <Pagination>
                 {data.previous && (
-                <button
+                <Button
                     onClick={() => {
                     actions.router.set(data.previous)
                     }}
                 >
                     &#171; Prev
-                </button>
+                </Button>
                 )}
                 {data.next && (
-                <button
+                <Button
                     onClick={() => {
                     actions.router.set(data.next)
                     }}
                 >
                     Next &#187;
-                </button>
+                </Button>
                 )}
             </Pagination>
         </Main>

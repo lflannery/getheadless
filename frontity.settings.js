@@ -19,6 +19,12 @@ const settings = {
       "state": {
         "source": {
           "url": "https://comparisonsite.wpengine.com/",
+          "params": {
+            "per_page": 16,
+            "order_by": "date",
+            "order": "desc",
+            "type": ["post"],
+          },
           "homepage": "/home",
           "postsPage": "/blog",
           "postTypes": [

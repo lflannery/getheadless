@@ -1,18 +1,18 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "d6dfcc3a09eeb90cb451",
+  "hash": "964ed4868f55beca0a9d",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\build\\static",
   "assetsByChunkName": {
     "getfused-frontity": [
       "getfused-frontity.module.js",
-      "getfused-frontity.f5cb64d20f357022abe2.hot-update.js"
+      "getfused-frontity.3fe345d3ccdccb90c088.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "f5cb64d20f357022abe2.hot-update.json",
+      "name": "3fe345d3ccdccb90c088.hot-update.json",
       "size": 59,
       "chunks": [],
       "chunkNames": [],
@@ -23,8 +23,8 @@
       "emitted": false
     },
     {
-      "name": "getfused-frontity.f5cb64d20f357022abe2.hot-update.js",
-      "size": 17458,
+      "name": "getfused-frontity.3fe345d3ccdccb90c088.hot-update.js",
+      "size": 2949,
       "chunks": [
         "getfused-frontity"
       ],
@@ -39,7 +39,7 @@
     },
     {
       "name": "getfused-frontity.module.js",
-      "size": 8939701,
+      "size": 8952044,
       "chunks": [
         "getfused-frontity"
       ],
@@ -158,7 +158,7 @@
       ],
       "assets": [
         "getfused-frontity.module.js",
-        "getfused-frontity.f5cb64d20f357022abe2.hot-update.js"
+        "getfused-frontity.3fe345d3ccdccb90c088.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -170,7 +170,7 @@
       "id": "getfused-frontity",
       "files": [
         "getfused-frontity.module.js",
-        "getfused-frontity.f5cb64d20f357022abe2.hot-update.js"
+        "getfused-frontity.3fe345d3ccdccb90c088.hot-update.js"
       ]
     }
   ]

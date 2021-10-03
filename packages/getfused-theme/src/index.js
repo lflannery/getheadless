@@ -1,6 +1,8 @@
 import Root from './components'
 import link from '@frontity/html2react/processors/link'
 import menuHandler from './components/handlers/menu-handler';
+import caseStudyHandler from './components/handlers/case-study-handler';
+import teamHandler from './components/handlers/team-handler';
 
 
 const theme = {
@@ -33,11 +35,11 @@ const theme = {
   },
   libraries: {
     html2react: {
-      processors: [link]
+        processors: [link]
     },
     source: {
-        handlers: [menuHandler],
-      },
+        handlers: [menuHandler, caseStudyHandler, teamHandler]
+    },
   }
 }
 

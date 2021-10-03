@@ -1,0 +1,15 @@
+webpackHotUpdate("getfused-frontity",{
+
+/***/ "./packages/getfused-theme/src/components/styles/button.js":
+/*!*****************************************************************!*\
+  !*** ./packages/getfused-theme/src/components/styles/button.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var frontity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! frontity */ \"./node_modules/frontity/dist/src/index.js\");\n/* harmony import */ var frontity__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(frontity__WEBPACK_IMPORTED_MODULE_0__);\nfunction _EMOTION_STRINGIFIED_CSS_ERROR__(){return\"You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop).\";}const Button=Object(frontity__WEBPACK_IMPORTED_MODULE_0__[\"styled\"])(\"div\", false?undefined:{target:\"e9snic70\",label:\"Button\"})( false?undefined:{name:\"16oivh4\",styles:\"background:#ffcc00;color:#000;padding:1rem;display:inline;font-weight:700\",map:\"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcbGZsYW5uZXJ5XFxEb2N1bWVudHNcXEdpdEh1YlxcZ2V0aGVhZGxlc3NcXHBhY2thZ2VzXFxnZXRmdXNlZC10aGVtZVxcc3JjXFxjb21wb25lbnRzXFxzdHlsZXNcXGJ1dHRvbi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFeUIiLCJmaWxlIjoiQzpcXFVzZXJzXFxsZmxhbm5lcnlcXERvY3VtZW50c1xcR2l0SHViXFxnZXRoZWFkbGVzc1xccGFja2FnZXNcXGdldGZ1c2VkLXRoZW1lXFxzcmNcXGNvbXBvbmVudHNcXHN0eWxlc1xcYnV0dG9uLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgc3R5bGVkIH0gZnJvbSAnZnJvbnRpdHknXHJcblxyXG5jb25zdCBCdXR0b24gPSBzdHlsZWQuZGl2YFxyXG4gIGJhY2tncm91bmQ6ICNmZmNjMDA7XHJcbiAgY29sb3I6ICMwMDA7XHJcbiAgcGFkZGluZzogMXJlbTtcclxuICBkaXNwbGF5OiBpbmxpbmU7XHJcbiAgZm9udC13ZWlnaHQ6IDcwMDtcclxuYFxyXG5leHBvcnQgZGVmYXVsdCBCdXR0b247Il19 */\",toString:_EMOTION_STRINGIFIED_CSS_ERROR__});/* harmony default export */ __webpack_exports__[\"default\"] = (Button);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWNrYWdlcy9nZXRmdXNlZC10aGVtZS9zcmMvY29tcG9uZW50cy9zdHlsZXMvYnV0dG9uLmpzP2VlZDkiXSwibmFtZXMiOlsiQnV0dG9uIl0sIm1hcHBpbmdzIjoiOzs7cVJBRUEsS0FBTUEsT0FBTSx5aENBQVosQ0FPZUEscUVBQWYiLCJmaWxlIjoiLi9wYWNrYWdlcy9nZXRmdXNlZC10aGVtZS9zcmMvY29tcG9uZW50cy9zdHlsZXMvYnV0dG9uLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgc3R5bGVkIH0gZnJvbSAnZnJvbnRpdHknXHJcblxyXG5jb25zdCBCdXR0b24gPSBzdHlsZWQuZGl2YFxyXG4gIGJhY2tncm91bmQ6ICNmZmNjMDA7XHJcbiAgY29sb3I6ICMwMDA7XHJcbiAgcGFkZGluZzogMXJlbTtcclxuICBkaXNwbGF5OiBpbmxpbmU7XHJcbiAgZm9udC13ZWlnaHQ6IDcwMDtcclxuYFxyXG5leHBvcnQgZGVmYXVsdCBCdXR0b247Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./packages/getfused-theme/src/components/styles/button.js\n");
+
+/***/ })
+
+})

@@ -33,7 +33,7 @@ const Blog = ({ state, actions }) => {
 
                     return (
                         <article className="listingItem" key={item.id}>
-                            <Link link={post.link} key={item.id}>
+                            <Link link={post.link}>
                                 {image ? 
                                 <img className="listingImage" src={image.source_url} alt={image.alt_text} />
                                 : null

@@ -10,6 +10,7 @@ import Team from './pages/team'
 import Contact from './pages/contact'
 import Page from './pages/page'
 import Work from './pages/work'
+import CaseStudy from './pages/case-study'
 import Blog from './pages/blog'
 import Post from './pages/post'
 import Error from './pages/error'
@@ -53,6 +54,7 @@ const Root = ({ state }) => {
                     font-size: 1.412rem;
                     font-weight: 600;
                     line-height: 1.5;
+                    margin-bottom: 2rem;
                 }
                 h3 {
                     font-size: 1.75rem;
@@ -118,6 +120,7 @@ const Root = ({ state }) => {
             <Home when={data.isHome} />
             <SearchResults when={data.isSearch} />
             <Work when={data.route === "/work/"} />
+            <CaseStudy when={data.isCaseStudy} />
             <Blog when={data.route === "/blog/"} />
             <Service when={data.route === "/services/"} />
             <About when={data.route === "/about/"} />

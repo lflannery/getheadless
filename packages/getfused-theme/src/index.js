@@ -34,6 +34,7 @@ const theme = {
         await actions.source.fetch(`/menu/${state.theme.socialMenu}/`);
         await actions.source.fetch(`/recent-case-study`)
         await actions.source.fetch(`/leadership`)
+        await actions.source.fetch(`/work`)
       },
     },
   },

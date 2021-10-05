@@ -7,6 +7,7 @@ import PageContent from '../styles/pageContent'
 import ServiceGrid from '../styles/serviceGrid'
 import MarketingPanel from '../styles/marketingPanel'
 import Bottom from '../styles/bottom'
+import FormBlock from '../styles/form-block'
 
 const Page = ({ state, libraries }) => {
     const data = state.source.get(state.router.link)
@@ -83,15 +84,54 @@ const Page = ({ state, libraries }) => {
                     <h2 className="featuredWork">Featured <Html2React html={page.title.rendered} /> work</h2>
                     <Link link="/link" className="yellowArrow">See our portfolio</Link>
                 </div>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+                { page.acf.case_studies ?
+                <>
+                {page.acf.case_studies.map((item) => {
+                    const caseStudyImage = state.source[item.post_type][item.ID].acf.thumbnail
+                    const caseStudyLink = state.source[item.post_type][item.ID].link
+
+                    return (
+                        <div key={item.ID}>
+                            <a href={caseStudyLink}>
+                                <img src={caseStudyImage} alt="" />
+                            </a>
+                        </div> 
+                    )
+                })}
+                </>
+                : null}
                 <div>
                     <h2>Ready to take your brand to new levels of success?</h2>
                     <p>Get in touch with our team to get the conversation started. We look forward to partnering with you to achieve your marketing goals.</p>
                     <span className="cta">Let's drive your results</span>
                 </div>
-                <form></form>
+                <FormBlock>
+                    <h2>Inquire Now</h2>
+                    <div className="tagline">Let's create something beautiful</div>
+                    <form action="" method="get">
+                        <div className="field">
+                            <label htmlFor="firstName">First Name</label>
+                            <input id="firstName" type="text" autoComplete="given-name" />
+                        </div>
+                        <div className="field">
+                            <label htmlFor="lastName">Last Name</label>
+                            <input id="lastName" type="text" autoComplete="family-name" />
+                        </div>
+                        <div className="field">
+                            <label htmlFor="companyName">Company Name</label>
+                            <input id="companyName" type="text" />
+                        </div>
+                        <div className="field">
+                            <label htmlFor="email">Email *</label>
+                            <input id="email" type="text" autoComplete="email" required />
+                        </div>
+                        <div className="field last">
+                            <label htmlFor="message">Tell us about the challenges you are facing</label>
+                            <textarea id="message" rows="7" />
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </FormBlock>     
             </Bottom>
         </main>
       </>

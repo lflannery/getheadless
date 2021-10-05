@@ -4,8 +4,9 @@ const Bottom = styled.div`
   margin: auto;  
   max-width: 1792px;  
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  grid-template: auto/repeat(2, 1fr);
   grid-gap: 3.5rem 1rem;
+  align-items: center;
   padding-top: 6.5rem;
 
   h2 {
@@ -25,6 +26,10 @@ const Bottom = styled.div`
   a {
     font-size: 1.5rem;
     font-weight: 500;
+  }
+
+  img {
+      width: 100%;
   }
 `
 export default Bottom;

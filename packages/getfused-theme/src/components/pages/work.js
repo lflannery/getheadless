@@ -25,7 +25,7 @@ const Work = ({ state }) => {
 
                     return (
                         <article className="listingItem" key={item.id}>
-                            <Link link={post.link} key={item.id}>
+                            <Link link={post.link}>
                                 <img className="listingImage" src={post.acf.thumbnail} alt='' />
                                 <h3><span dangerouslySetInnerHTML={{ __html: post.title.rendered }} /></h3>
                                 <div dangerouslySetInnerHTML={{ __html: post.acf.subtitle }} />

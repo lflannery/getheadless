@@ -4,7 +4,7 @@ import Bullet from '../../images/bullet.png'
 const ServiceGrid = styled.div`
   max-width: 1140px;
   margin: auto;  
-  padding: 5rem 0;  
+  padding: 0 0 5rem;  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3.5rem 1rem;

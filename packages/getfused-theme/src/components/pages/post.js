@@ -9,9 +9,6 @@ import CallToAction from '../styles/calltoAction'
 const Post = ({ state }) => {
     const data = state.source.get(state.router.link)
     const post = state.source[data.type][data.id]
-    const author = post.acf.author[0].ID
-    // const authorInfo = state.source.team[author]
-    // console.log(authorInfo)
     
     return (
       <>

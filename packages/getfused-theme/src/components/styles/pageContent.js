@@ -7,5 +7,6 @@ const PageContent = styled.div`
   font-weight: 500;
   line-height: 1.5;
   margin-bottom: 1.5rem;
+  padding-bottom: 5rem;
 `
 export default PageContent;

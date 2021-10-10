@@ -92,9 +92,9 @@ const Page = ({ state, libraries }) => {
 
                     return (
                         <div key={item.ID}>
-                            <a href={caseStudyLink}>
+                            <Link link={caseStudyLink}>
                                 <img src={caseStudyImage} alt="" />
-                            </a>
+                            </Link>
                         </div> 
                     )
                 })}

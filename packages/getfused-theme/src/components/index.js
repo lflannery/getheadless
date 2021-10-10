@@ -19,6 +19,7 @@ import Footer from './pages/footer'
 import YellowArrow from '../images/arrow.png'
 import WhiteArrow from '../images/whiteArrow.png'
 import BlackArrow from '../images/blackArrow.png'
+import CategoryPage from './pages/category-page'
 
 const Root = ({ state }) => {
     const data = state.source.get(state.router.link)
@@ -119,8 +120,9 @@ const Root = ({ state }) => {
             <Loading when={data.isFetching} />
             <Home when={data.isHome} />
             <SearchResults when={data.isSearch} />
-            <Work when={data.route === "/work/"} />
             <CaseStudy when={data.isCaseStudy} />
+            <CategoryPage when={data.isCategory} />
+            <Work when={data.route === "/work/"} />
             <Blog when={data.route === "/blog/"} />
             <Service when={data.route === "/services/"} />
             <About when={data.route === "/about/"} />

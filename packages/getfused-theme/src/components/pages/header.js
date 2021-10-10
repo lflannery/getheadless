@@ -13,9 +13,9 @@ const Header = ({ state }) => {
     return (
         <header>
             <HeaderFooter>
-                <a href="/">
+                <Link link="/">
                     <img src={Logo} alt={state.theme.siteName} />
-                </a>
+                </Link>
                 <Menu>
                     {primaryMenuItems.map((item) => {
                         return (

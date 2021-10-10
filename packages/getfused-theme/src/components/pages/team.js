@@ -25,9 +25,9 @@ const Team = ({ state }) => {
 
                     return (
                         <article className="listingItem" key={item.id}>
-                            <Link link={post.link} key={item.id}>
+                            <Link link={post.link}>
                                 <img className="listingImage" src={post.acf.thumbnail_image} alt='' />
-                                <h3><span dangerouslySetInnerHTML={{ __html: post.title.rendered }} /></h3>
+                                <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                                 <div dangerouslySetInnerHTML={{ __html: post.acf.job_title }} />
                             </Link>
                         </article>

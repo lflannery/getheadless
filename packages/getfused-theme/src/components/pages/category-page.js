@@ -17,7 +17,7 @@ const CategoryPage = ({ state, actions }) => {
             <meta name="description" content="Category Page" />
         </Head>
         <Main>
-            <h1>{categoryName} Blog Posts</h1>
+            <h1 dangerouslySetInnerHTML={{ __html: categoryName + ` Blog Posts`}}  />
             <Link className="yellowArrow" link="/blog">All Posts</Link>
            <Items>
                 {data.items.map((item) => {
@@ -31,7 +31,7 @@ const CategoryPage = ({ state, actions }) => {
                                 <img className="listingImage" src={image.source_url} alt={image.alt_text} />
                                 : null
                                 }
-                                <h3><span dangerouslySetInnerHTML={{ __html: post.title.rendered }} /></h3>
+                                <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                                 <div dangerouslySetInnerHTML={{ __html: post.acf.subtitle }} />
                             </Link>
                         </article>

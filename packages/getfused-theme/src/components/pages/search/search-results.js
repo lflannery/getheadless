@@ -47,13 +47,16 @@ const SearchResults = ({ state, libraries, actions }) => {
 
                     return (
                         <article className="listingItem" key={item.id}>
-                            <Link link={post.link} key={item.id}>
+                            <Link link={post.link}>
                                 {image ? 
-                                <img className="listingImage" src={image.source_url} alt={image.alt_text} />
-                                : null
+                                <img className="listingImage" src={image.source_url} alt="" />
+                                : post.acf.thumbnail ? <img className="listingImage" src={post.acf.thumbnail} alt="" />
+                                : <img className="listingImage" src={post.acf.thumbnail_image} alt='' />}
+                                <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                                { post.acf.job_title ?
+                                <div dangerouslySetInnerHTML={{ __html: post.acf.job_title }} />
+                                : <div dangerouslySetInnerHTML={{ __html: post.acf.subtitle }} />
                                 }
-                                <h3><span dangerouslySetInnerHTML={{ __html: post.title.rendered }} /></h3>
-                                <div dangerouslySetInnerHTML={{ __html: post.acf.subtitle }} />
                             </Link>
                         </article>
                     )

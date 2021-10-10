@@ -35,10 +35,10 @@ const Blog = ({ state, actions }) => {
                         <article className="listingItem" key={item.id}>
                             <Link link={post.link}>
                                 {image ? 
-                                <img className="listingImage" src={image.source_url} alt={image.alt_text} />
+                                <img className="listingImage" src={image.source_url} alt="" />
                                 : null
                                 }
-                                <h3><span dangerouslySetInnerHTML={{ __html: post.title.rendered }} /></h3>
+                                <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                                 <div dangerouslySetInnerHTML={{ __html: post.acf.subtitle }} />
                             </Link>
                         </article>

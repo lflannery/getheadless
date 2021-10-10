@@ -13,7 +13,6 @@ const CaseStudy = ({ state }) => {
       <>
         <Head>
             <title>{post.title.rendered} - {state.theme.siteName}</title>
-            {/* <meta name="description" content={post.excerpt.rendered} /> */}
         </Head>
         <PostMain>
             <TopContent>

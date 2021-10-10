@@ -40,7 +40,7 @@ const Page = ({ state, libraries }) => {
                         <article className="listingItem" key={item.id}>
                             <Link link={post.link} key={item.id}>
                                 <img className="listingImage" src={post.acf.thumbnail} alt='' />
-                                <h3><span dangerouslySetInnerHTML={{ __html: post.title.rendered }} /></h3>
+                                <h3 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                                 <div dangerouslySetInnerHTML={{ __html: post.acf.subtitle }} />
                             </Link>
                         </article>

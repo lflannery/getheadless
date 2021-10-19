@@ -1,18 +1,18 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "f4f57661b0eb3d0485c7",
+  "hash": "8830225ba0700e4b0c83",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\lflannery\\Documents\\GitHub\\getheadless\\build\\static",
   "assetsByChunkName": {
     "getfused-frontity": [
       "getfused-frontity.module.js",
-      "getfused-frontity.2ae4c3ed30969d384054.hot-update.js"
+      "getfused-frontity.1f13fc938668a51463ad.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "2ae4c3ed30969d384054.hot-update.json",
+      "name": "1f13fc938668a51463ad.hot-update.json",
       "size": 59,
       "chunks": [],
       "chunkNames": [],
@@ -23,8 +23,8 @@
       "emitted": false
     },
     {
-      "name": "getfused-frontity.2ae4c3ed30969d384054.hot-update.js",
-      "size": 3534,
+      "name": "getfused-frontity.1f13fc938668a51463ad.hot-update.js",
+      "size": 20404,
       "chunks": [
         "getfused-frontity"
       ],
@@ -39,7 +39,7 @@
     },
     {
       "name": "getfused-frontity.module.js",
-      "size": 9030332,
+      "size": 9045254,
       "chunks": [
         "getfused-frontity"
       ],
@@ -57,7 +57,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/Facebook-Negative.svg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/LinkedIn.svg",
@@ -67,7 +67,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/LinkedIn.svg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/Logo.png",
@@ -77,7 +77,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/Logo.png"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/MarketingStrategy.svg",
@@ -87,7 +87,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/MarketingStrategy.svg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/Twitter-Negative.svg",
@@ -97,7 +97,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/Twitter-Negative.svg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/arrow.png",
@@ -107,7 +107,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/arrow.png"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/blackArrow.png",
@@ -117,7 +117,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/blackArrow.png"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/bullet-yellow.png",
@@ -127,7 +127,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/bullet-yellow.png"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/bullet.png",
@@ -137,7 +137,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/bullet.png"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/content-creation.svg",
@@ -147,7 +147,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/content-creation.svg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/design.svg",
@@ -157,7 +157,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/design.svg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/email-marketing.svg",
@@ -167,7 +167,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/email-marketing.svg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/paid-search.svg",
@@ -177,7 +177,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/paid-search.svg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/placeholder.jpg",
@@ -187,7 +187,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/placeholder.jpg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/search.svg",
@@ -197,7 +197,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/search.svg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/social-advertising.svg",
@@ -207,7 +207,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/social-advertising.svg"
       },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/whiteArrow.png",
@@ -217,7 +217,7 @@
       "info": {
         "sourceFilename": "packages/getfused-theme/src/images/whiteArrow.png"
       },
-      "emitted": true
+      "emitted": false
     }
   ],
   "filteredAssets": 0,
@@ -228,7 +228,7 @@
       ],
       "assets": [
         "getfused-frontity.module.js",
-        "getfused-frontity.2ae4c3ed30969d384054.hot-update.js"
+        "getfused-frontity.1f13fc938668a51463ad.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -240,7 +240,7 @@
       "id": "getfused-frontity",
       "files": [
         "getfused-frontity.module.js",
-        "getfused-frontity.2ae4c3ed30969d384054.hot-update.js"
+        "getfused-frontity.1f13fc938668a51463ad.hot-update.js"
       ]
     }
   ]

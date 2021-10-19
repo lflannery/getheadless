@@ -36,6 +36,7 @@ const theme = {
         await actions.source.fetch(`/leadership`)
         await actions.source.fetch(`/work`)
         await actions.source.fetch(`/blog`)
+        await actions.source.fetch(`/about/team`)
       },
     },
   },

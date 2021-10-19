@@ -5,6 +5,8 @@ import PostMain from '../styles/postMain'
 import TopContent from '../styles/topContent'
 import PostContent from '../styles/postContent'
 import CallToAction from '../styles/calltoAction'
+import Author from '../styles/author'
+import Items from '../styles/items'
 
 const Post = ({ state }) => {
     const data = state.source.get(state.router.link)
@@ -41,7 +43,57 @@ const Post = ({ state }) => {
                         <Link link={post.acf.cta_link} className="yellowArrow">{post.acf.cta_label}</Link>
                     </CallToAction>
                 : null }
+                { post.acf.authorPosts ?
+                <Author>
+                    <h2 className="subtitle">About the Author</h2>
+                    {post.acf.authorPosts.map((item) => {
+                        const image = state.source[item.post_type][item.ID].acf.thumbnail_image
+                        const link = state.source[item.post_type][item.ID].link
+                        const title = state.source[item.post_type][item.ID].title.rendered
+                        const jobTitle = state.source[item.post_type][item.ID].acf.job_title
+                        const firstName = state.source[item.post_type][item.ID].acf.first_name
+
+                        return (
+                            <div className="item" key={item.ID}>
+                                <img src={image} alt="" />
+                                <div>
+                                    
+                                    <p>{title}</p>
+                                    <div>
+                                        <span>{jobTitle} | </span>
+                                        <Link link={link}>More about {firstName}</Link>
+                                    </div>
+                                </div>
+                            </div> 
+                        )
+                    })}
+                </Author>
+                : null}
             </PostContent>
+            { post.acf.related_blogs ?
+                <>
+                    <h2>You Might Also Like</h2>
+                    <Items className="wide">  
+                        {post.acf.related_blogs.map((item) => {
+                            const post = state.source[item.post_type][item.ID]
+                            const image = state.source.attachment[post.featured_media]
+                            const link = state.source[item.post_type][item.ID].link
+                            const title = state.source[item.post_type][item.ID].title.rendered
+                            const subtitle = state.source[item.post_type][item.ID].acf.subtitle
+
+                            return (
+                                <article className="listingItem" key={item.id}>
+                                    <Link link={link}>
+                                        <img className="listingImage" src={image.source_url} alt="" />
+                                        <h3 dangerouslySetInnerHTML={{ __html: title }} />
+                                        <div dangerouslySetInnerHTML={{ __html: subtitle }} />
+                                    </Link>
+                                </article>
+                            )
+                        })}
+                    </Items>
+                </>
+                : null}
         </PostMain> 
       </>
     );

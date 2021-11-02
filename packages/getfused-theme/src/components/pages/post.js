@@ -4,6 +4,7 @@ import Link from '@frontity/components/link'
 import PostMain from '../styles/postMain'
 import TopContent from '../styles/topContent'
 import PostContent from '../styles/postContent'
+import RelatedPosts from '../styles/relatedPosts'
 import CallToAction from '../styles/calltoAction'
 import Author from '../styles/author'
 import Items from '../styles/items'
@@ -43,7 +44,7 @@ const Post = ({ state }) => {
                         <Link link={post.acf.cta_link} className="yellowArrow">{post.acf.cta_label}</Link>
                     </CallToAction>
                 : null }
-                { post.acf.authorPosts ?
+                { post.type === "post" && post.acf.authorPosts ?
                 <Author>
                     <h2 className="subtitle">About the Author</h2>
                     {post.acf.authorPosts.map((item) => {
@@ -68,9 +69,34 @@ const Post = ({ state }) => {
                         )
                     })}
                 </Author>
-                : null}
+                : null} 
             </PostContent>
-            { post.acf.related_blogs ?
+            <RelatedPosts>
+            {post.type === "team" && post.acf.authorPosts ?
+                <>
+                    <h2>Blog Posts</h2>
+                    <Items className="wide">  
+                        {post.acf.authorPosts.map((item) => {
+                            const post = state.source[item.post_type][item.ID]
+                            const image = state.source.attachment[post.featured_media]
+                            const link = state.source[item.post_type][item.ID].link
+                            const title = state.source[item.post_type][item.ID].title.rendered
+                            const subtitle = state.source[item.post_type][item.ID].acf.subtitle
+
+                            return (
+                                <article className="listingItem" key={item.ID}>
+                                    <Link link={link}>
+                                        <img className="listingImage" src={image.source_url} alt="" />
+                                        <h3 dangerouslySetInnerHTML={{ __html: title }} />
+                                        <div dangerouslySetInnerHTML={{ __html: subtitle }} />
+                                    </Link>
+                                </article>
+                            )
+                        })}
+                    </Items>
+                </>
+            : null }
+            { post.type === "post" && post.acf.related_blogs ?
                 <>
                     <h2>You Might Also Like</h2>
                     <Items className="wide">  
@@ -82,7 +108,7 @@ const Post = ({ state }) => {
                             const subtitle = state.source[item.post_type][item.ID].acf.subtitle
 
                             return (
-                                <article className="listingItem" key={item.id}>
+                                <article className="listingItem" key={item.ID}>
                                     <Link link={link}>
                                         <img className="listingImage" src={image.source_url} alt="" />
                                         <h3 dangerouslySetInnerHTML={{ __html: title }} />
@@ -94,6 +120,7 @@ const Post = ({ state }) => {
                     </Items>
                 </>
                 : null}
+            </RelatedPosts>
         </PostMain> 
       </>
     );

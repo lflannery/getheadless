@@ -24,6 +24,8 @@
     "@frontity/wp-source": "^1.11.5",
     "frontity": "^1.17.0",
     "getfused-theme": "./packages/getfused-theme",
-    "moment": "^2.29.1"
-  }
+    "moment": "^2.29.1",
+    "react-axe": "file:packages/react-axe"
+  },
+  "devDependencies": {}
 }
